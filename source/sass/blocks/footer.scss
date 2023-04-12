@@ -1,0 +1,15 @@
+.footer {
+  position: relative;
+  z-index: 2;
+
+  background-color: $color-default-white;
+  box-shadow: 0 -4px 16px $color-shadow;
+}
+
+.footer__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100px;
+}

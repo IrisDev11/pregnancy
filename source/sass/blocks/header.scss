@@ -1,0 +1,24 @@
+.header {
+  position: relative;
+  z-index: 2;
+}
+
+.header__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 151px;
+}
+
+.header__logo {
+  display: flex;
+}
+
+.header__logo-icon {
+  margin-right: 33px;
+}
+
+.header__logo-text {
+  margin-top: 7px;
+}

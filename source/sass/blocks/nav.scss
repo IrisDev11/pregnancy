@@ -1,0 +1,34 @@
+.nav__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.nav__item {
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.nav__link {
+  display: block;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: $color-grey;
+
+  @include hover-focus {
+    opacity: 0.6;
+  }
+
+  @include active {
+    color: $color-mauvelous;
+  }
+}
+
+.nav__link--current {
+  color: $color-persian-pink;
+}

@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Приложение для беременных Календарь беременности.">
+    <title>Календарь беременности</title>
+    <link rel="preload" href="fonts/inter-v12-latin-regular.woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/inter-v12-latin-regular.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/inter-v12-latin-300.woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/inter-v12-latin-300.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/inter-v12-latin-700.woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/inter-v12-latin-700.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/RubikOne-Regular.woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/RubikOne-Regular.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/pacifico-v22-latin-regular.woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/pacifico-v22-latin-regular.woff2" as="font" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container header__wrapper">
+          <a class="header__logo">
+            <svg class="header__logo-icon" width="77" height="88">
+              <use xlink:href="img/sprite.svg#logo"></use>
+            </svg>
+            <svg class="header__logo-text" width="329" height="92">
+              <use xlink:href="img/sprite.svg#logo-text"></use>
+            </svg>
+          </a>
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a class="nav__link nav__link--current">Недели</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">Календарь</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">Счетчики</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">Форумы</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">Партнерская программа</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="user-nav">
+            <li class="user-nav__item">
+              <a class="user-nav__link" href="#">
+                <span class="visually-hidden">Твой профиль</span>
+                <svg width="29" height="30">
+                  <use xlink:href="img/sprite.svg#user-icon"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </header>
+      <main class="main">
+        <section class="slider">
+          <h2 class="visually-hidden">Выбор недели беременности</h2>
+          <div class="container slider__wrapper">
+            <div class="slider__toogle-wrapper">
+              <button class="slider__toogle slider__toogle--back" type="button">
+                <svg class="slider__icon--back" width="20" height="11">
+                  <use xlink:href="img/sprite.svg#arrow-slider"></use>
+                </svg>
+                <span>назад</span>
+              </button>
+              <button class="slider__toogle slider__toogle--forward" type="button">
+                <span>далее</span>
+                <svg class="slider__icon--forward" width="20" height="11">
+                  <use xlink:href="img/sprite.svg#arrow-slider"></use>
+                </svg>
+              </button>
+            </div>
+            <ul class="slider__list">
+              <li class="slider__item">
+                <button class="slider__button" type="button">
+                  <span class="slider__button-number">1</span>
+                  <span class="slider__button-text">нед</span>
+                </button>
+              </li>
+              <li class="slider__item">
+                <button class="slider__button" type="button">
+                  <span class="slider__button-number">2</span>
+                  <span class="slider__button-text">нед</span>
+                </button>
+              </li>
+              <li class="slider__item">
+                <button class="slider__button" type="button">
+                  <span class="slider__button-number">3</span>
+                  <span class="slider__button-text">нед</span>
+                </button>
+              </li>
+              <li class="slider__item">
+                <button class="slider__button" type="button">
+                  <span class="slider__button-number">4</span>
+                  <span class="slider__button-text">нед</span>
+                </button>
+              </li>
+              <li class="slider__item">
+                <button class="slider__button" type="button">
+                  <span class="slider__button-number">5</span>
+                  <span class="slider__button-text">нед</span>
+                </button>
+              </li>
+              <li class="slider__item">
+                <button class="slider__button" type="button">
+                  <span class="slider__button-number">6</span>
+                  <span class="slider__button-text">нед</span>
+                </button>
+              </li>
+              <li class="slider__item">
+                <button class="slider__button" type="button">
+                  <span class="slider__button-number">7</span>
+                  <span class="slider__button-text">нед</span>
+                </button>
+              </li>
+              <li class="slider__item">
+                <button class="slider__button" type="button">
+                  <span class="slider__button-number">8</span>
+                  <span class="slider__button-text">нед</span>
+                </button>
+              </li>
+              <li class="slider__item">
+                <button class="slider__button" type="button">
+                  <span class="slider__button-number">9</span>
+                  <span class="slider__button-text">нед</span>
+                </button>
+              </li>
+              <li class="slider__item slider__item--current">
+                <button class="slider__button" type="button">
+                  <span class="slider__button-number">10</span>
+                  <span class="slider__button-text">нед</span>
+                </button>
+              </li>
+              <li class="slider__item">
+                <button class="slider__button" type="button">
+                  <span class="slider__button-number">11</span>
+                  <span class="slider__button-text">нед</span>
+                </button>
+              </li>
+              <li class="slider__item">
+                <button class="slider__button" type="button">
+                  <span class="slider__button-number">12</span>
+                  <span class="slider__button-text">нед</span>
+                </button>
+              </li>
+              <li class="slider__item">
+                <button class="slider__button" type="button">
+                  <span class="slider__button-number">13</span>
+                  <span class="slider__button-text">нед</span>
+                </button>
+              </li>
+              <li class="slider__item">
+                <button class="slider__button" type="button">
+                  <span class="slider__button-number">14</span>
+                  <span class="slider__button-text">нед</span>
+                </button>
+              </li>
+              <li class="slider__item">
+                <button class="slider__button" type="button">
+                  <span class="slider__button-number">15</span>
+                  <span class="slider__button-text">нед</span>
+                </button>
+              </li>
+              <li class="slider__item">
+                <button class="slider__button" type="button">
+                  <span class="slider__button-number">16</span>
+                  <span class="slider__button-text">нед</span>
+                </button>
+              </li>
+              <li class="slider__item">
+                <button class="slider__button" type="button">
+                  <span class="slider__button-number">17</span>
+                  <span class="slider__button-text">нед</span>
+                </button>
+              </li>
+              <li class="slider__item">
+                <button class="slider__button" type="button">
+                  <span class="slider__button-number">18</span>
+                  <span class="slider__button-text">нед</span>
+                </button>
+              </li>
+              <li class="slider__item">
+                <button class="slider__button" type="button">
+                  <span class="slider__button-number">19</span>
+                  <span class="slider__button-text">нед</span>
+                </button>
+              </li>
+              <li class="slider__item">
+                <button class="slider__button" type="button">
+                  <span class="slider__button-number">20</span>
+                  <span class="slider__button-text">нед</span>
+                </button>
+              </li>
+              <li class="slider__item">
+                <button class="slider__button" type="button">
+                  <span class="slider__button-number">21</span>
+                  <span class="slider__button-text">нед</span>
+                </button>
+              </li>
+              <li class="slider__item">
+                <button class="slider__button" type="button">
+                  <span class="slider__button-number">22</span>
+                  <span class="slider__button-text">нед</span>
+                </button>
+              </li>
+              <li class="slider__item">
+                <button class="slider__button" type="button">
+                  <span class="slider__button-number">23</span>
+                  <span class="slider__button-text">нед</span>
+                </button>
+              </li>
+              <li class="slider__item">
+                <button class="slider__button" type="button">
+                  <span class="slider__button-number">24</span>
+                  <span class="slider__button-text">нед</span>
+                </button>
+              </li>
+              <li class="slider__item">
+                <button class="slider__button" type="button">
+                  <span class="slider__button-number">25</span>
+                  <span class="slider__button-text">нед</span>
+                </button>
+              </li>
+              <li class="slider__item">
+                <button class="slider__button" type="button">
+                  <span class="slider__button-number">26</span>
+                  <span class="slider__button-text">нед</span>
+                </button>
+              </li>
+              <li class="slider__item">
+                <button class="slider__button" type="button">
+                  <span class="slider__button-number">27</span>
+                  <span class="slider__button-text">нед</span>
+                </button>
+              </li>
+              <li class="slider__item">
+                <button class="slider__button" type="button">
+                  <span class="slider__button-number">28</span>
+                  <span class="slider__button-text">нед</span>
+                </button>
+              </li>
+              <li class="slider__item">
+                <button class="slider__button" type="button">
+                  <span class="slider__button-number">29</span>
+                  <span class="slider__button-text">нед</span>
+                </button>
+              </li>
+              <li class="slider__item">
+                <button class="slider__button" type="button">
+                  <span class="slider__button-number">30</span>
+                  <span class="slider__button-text">нед</span>
+                </button>
+              </li>
+              <li class="slider__item">
+                <button class="slider__button" type="button">
+                  <span class="slider__button-number">31</span>
+                  <span class="slider__button-text">нед</span>
+                </button>
+              </li>
+              <li class="slider__item">
+                <button class="slider__button" type="button">
+                  <span class="slider__button-number">32</span>
+                  <span class="slider__button-text">нед</span>
+                </button>
+              </li>
+              <li class="slider__item">
+                <button class="slider__button" type="button">
+                  <span class="slider__button-number">33</span>
+                  <span class="slider__button-text">нед</span>
+                </button>
+              </li>
+              <li class="slider__item">
+                <button class="slider__button" type="button">
+                  <span class="slider__button-number">34</span>
+                  <span class="slider__button-text">нед</span>
+                </button>
+              </li>
+              <li class="slider__item">
+                <button class="slider__button" type="button">
+                  <span class="slider__button-number">35</span>
+                  <span class="slider__button-text">нед</span>
+                </button>
+              </li>
+              <li class="slider__item">
+                <button class="slider__button" type="button">
+                  <span class="slider__button-number">36</span>
+                  <span class="slider__button-text">нед</span>
+                </button>
+              </li>
+              <li class="slider__item">
+                <button class="slider__button" type="button">
+                  <span class="slider__button-number">37</span>
+                  <span class="slider__button-text">нед</span>
+                </button>
+              </li>
+              <li class="slider__item">
+                <button class="slider__button" type="button">
+                  <span class="slider__button-number">38</span>
+                  <span class="slider__button-text">нед</span>
+                </button>
+              </li>
+              <li class="slider__item">
+                <button class="slider__button" type="button">
+                  <span class="slider__button-number">39</span>
+                  <span class="slider__button-text">нед</span>
+                </button>
+              </li>
+              <li class="slider__item">
+                <button class="slider__button" type="button">
+                  <span class="slider__button-number">40</span>
+                  <span class="slider__button-text">нед</span>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="content">
+          <div class="container content__wrapper">
+            <h2 class="visually-hidden">Что происходит на 10-ой неделе беременности.</h2>
+          <section class="content__item content__mother">
+            <picture>
+              <!-- <source type="image/webp" media="(min-width: 1024px)"
+              srcset="img/mother-icon-desktop.webp 1x, img/mother-icon-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/mother-icon-tablet.webp 1x, img/mother-icon-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/card-mobile-2.webp 1x, img/card-mobile-2@2x.webp 2x">
+            <source media="(min-width: 1024px)" srcset="img/mother-icon-desktop.png 1x, img/mother-icon-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/mother-icon-tablet.png 1x, img/mother-icon-tablet@2x.png 2x"> -->
+              <img class="content__image" src="img/mother-icon.png" srcset="img/mother-icon@2x.webp" width="118" height="138" alt="Беременная девушка гладит живот.">
+            </picture>
+            <h3 class="content__title">О маме</h3>
+            <div class="content__text">
+              <p>
+                Состояние беременной мамы на 10 неделе может быть различным, но обычно на этом этапе беременности у нее начинают проявляться первые симптомы, такие как тошнота, рвота, усталость и повышенная чувствительность груди. Важно следить за своим здоровьем, правильно питаться и регулярно посещать врачей, чтобы обеспечить....
+              </p>
+              <p class="content__text-hidden">
+                беременности у нее начинают проявляться первые симптомы, такие как тошнота, рвота, усталость и повышенная чувствительность груди. Важно следить за своим здоровьем, правильно питаться и регулярно посещать врачей, чтобы обеспечить.
+              </p>
+            </div>
+            <button class="content__toogle" type="button">
+              <span class="visually-hidden">Показать</span>
+              <svg width="20" height="10">
+                <use xlink:href="img/sprite.svg#arrow"></use>
+              </svg>
+            </button>
+          </section>
+          <section class="content__item content__baby">
+            <picture>
+              <!-- <source type="image/webp" media="(min-width: 1024px)"
+              srcset="img/mother-icon-desktop.webp 1x, img/mother-icon-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/mother-icon-tablet.webp 1x, img/mother-icon-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/card-mobile-2.webp 1x, img/card-mobile-2@2x.webp 2x">
+            <source media="(min-width: 1024px)" srcset="img/mother-icon-desktop.png 1x, img/mother-icon-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/mother-icon-tablet.png 1x, img/mother-icon-tablet@2x.png 2x"> -->
+              <img class="content__image" src="img/baby-icon.png" srcset="img/baby-icon@2x.webp" width="118" height="138" alt="Беременная девушка гладит живот.">
+            </picture>
+            <h3>О малыше</h3>
+            <div class="content__text">
+              <p>
+                На 10 неделе беременности малыш весит всего около 4 граммов и имеет длину около 3 сантиметров. Его органы пока еще не полностью сформировались, но уже начинают функционировать. У малыша начинают формироваться пальцы на конечностях и растут зубы. Важно помнить, что каждый ребенок развивается индивидуально ....
+              </p>
+              <p class="content__text-hidden">
+                Его органы пока еще не полностью сформировались, но уже начинают функционировать. У малыша начинают формироваться пальцы на конечностях и растут зубы. Важно помнить, что каждый ребенок развивается индивидуально.
+              </p>
+            </div>
+            <button class="content__toogle" type="button">
+              <span class="visually-hidden">Показать</span>
+              <svg width="20" height="10">
+                <use xlink:href="img/sprite.svg#arrow"></use>
+              </svg>
+            </button>
+          </section>
+          <section class="content__item content__recommendations">
+            <picture>
+              <!-- <source type="image/webp" media="(min-width: 1024px)"
+              srcset="img/mother-icon-desktop.webp 1x, img/mother-icon-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/mother-icon-tablet.webp 1x, img/mother-icon-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/card-mobile-2.webp 1x, img/card-mobile-2@2x.webp 2x">
+            <source media="(min-width: 1024px)" srcset="img/mother-icon-desktop.png 1x, img/mother-icon-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/mother-icon-tablet.png 1x, img/mother-icon-tablet@2x.png 2x"> -->
+              <img class="content__image" src="img/recommendations-icon.png" srcset="img/recommendations-icon@2x.webp" width="118" height="138" alt="Беременная девушка гладит живот.">
+            </picture>
+            <h3>Рекомендации</h3>
+            <div class="content__text">
+              <p>
+                Важно следить за своим здоровьем, правильно питаться и регулярно посещать врачей, чтобы обеспечить здоровое развитие ребенка и успокоить свои собственные беспокойства.
+              </p>
+            </div>
+            <button class="content__toogle" type="button">
+              <span class="visually-hidden">Показать</span>
+              <svg width="20" height="10">
+                <use xlink:href="img/sprite.svg#arrow"></use>
+              </svg>
+            </button>
+          </section>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="container footer__wrapper">
+          <a class="footer__copyright" href="#">© Copyright, pregnancy 2023</a>
+          <div class="nav nav--footer">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a class="nav__link nav__link--current">Недели</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">Календарь</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">Счетчики</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">Форумы</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">Партнерская программа</a>
+              </li>
+            </ul>
+          </div>
+          <section class="social">
+            <h2 class="visually-hidden">Мы в социальных сетях</h2>
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <span class="visually-hidden">Мы в Телеграмм</span>
+                  <svg width="30" height="30">
+                    <use xlink:href="img/sprite.svg#telegramm"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <span class="visually-hidden">Мы во Вконтакте</span>
+                  <svg width="30" height="30">
+                    <use xlink:href="img/sprite.svg#vk"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <span class="visually-hidden">Мы в Одноклассниках</span>
+                  <svg width="30" height="30">
+                    <use xlink:href="img/sprite.svg#ok"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </footer>
+    </div>
+
+    <script src="js/vendor.min.js"></script>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>

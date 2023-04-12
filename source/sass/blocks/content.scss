@@ -1,0 +1,36 @@
+.content {
+  margin-bottom: 40px;
+}
+
+.content__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content__item {
+  position: relative;
+  width: 32%;
+  padding: 33px 60px 33px 41px;
+
+  background-color: $color-default-white;
+  box-shadow: 0 5px 21px $color-shadow;
+  border-radius: 21px;
+}
+
+.content__image {
+  display: inline-flex;
+  margin-right: 26px;
+  margin-bottom: 22px;
+  float: left;
+}
+
+.content__toogle {
+  position: absolute;
+  bottom: 23px;
+  right: 27px;
+
+  background-color: transparent;
+  border: none;
+
+  cursor: pointer;
+}
